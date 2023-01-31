@@ -6,7 +6,9 @@
     "prepare": "git config core.hooksPath .git/hooks/ && npx simple-git-hooks",
     "commit": "git-cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "docs:dev": "pnpm run -C docs dev"
+    "docs:dev": "pnpm run -C docs dev",
+    "docs:build": "pnpm run -C docs build",
+    "docs:preview": "pnpm run -C docs preview"
   },
   "dependencies": {
     "vue": "^3.2.45"
