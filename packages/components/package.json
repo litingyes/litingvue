@@ -1,0 +1,12 @@
+{
+  "name": "@litingvue/components",
+  "version": "0.0.0",
+  "description": "",
+  "author": "liting <luz.liting@gmail.com>",
+  "license": "MIT",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
