@@ -5,7 +5,8 @@
     "release": "node ./internal/build/src/release.js",
     "prepare": "git config core.hooksPath .git/hooks/ && npx simple-git-hooks",
     "commit": "git-cz",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "docs:dev": "pnpm run -C docs dev"
   },
   "dependencies": {
     "vue": "^3.2.45"
