@@ -6,10 +6,6 @@
   "author": "liting <luz.liting@gmail.com>",
   "license": "MIT",
   "keywords": [],
-  "main": "index.js",
-  "scripts": {
-    "build": "vite build"
-  },
   "devDependencies": {
     "enquirer": "^2.3.6",
     "execa": "^6.1.0",
