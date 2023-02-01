@@ -27,6 +27,6 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@litingvue/components": "workspace:^0.0.0"
+    "@litingvue/components": "0.0.0"
   }
 }

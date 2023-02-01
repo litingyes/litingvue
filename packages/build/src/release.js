@@ -78,7 +78,7 @@ async function main() {
   // }
 
   step('\nGenerating changelog...')
-  await run('pnpm', ['run', 'changelog'])
+  await run('pnpm', ['-w', 'run', 'changelog'])
 
   step('\nUpdating lockfile...')
   await run('pnpm', ['install', '--prefer-offline'])

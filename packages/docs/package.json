@@ -13,7 +13,7 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "litingvue": "workspace:^0.0.0",
+    "litingvue": "0.0.0",
     "vite-plugin-markdown-preview": "^1.0.3"
   },
   "devDependencies": {
