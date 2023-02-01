@@ -5,13 +5,13 @@ const semver = require('semver')
 const { prompt } = require('enquirer')
 const execa = require('execa')
 const consola = require('consola')
-const currentVersion = require('../../../package.json').version
+const currentVersion = require('../../litingvue/package.json').version
 
 const preId = args.preid || (semver.prerelease(currentVersion) && semver.prerelease(currentVersion)[0])
 const isDryRun = args.dry
 const skipTests = args.skipTests
 const skipBuild = args.skipBuild
-const packages = fs.readdirSync(path.resolve(__dirname, '../packages')).filter(p => !p.endsWith('.ts') && !p.startsWith('.'))
+const packages = fs.readdirSync(path.resolve(__dirname, '../../../packages')).filter(p => !p.endsWith('.ts') && !p.startsWith('.'))
 
 const skippedPackages = []
 
@@ -22,7 +22,7 @@ const bin = name => path.resolve(__dirname, `../node_modules/.bin/${name}`)
 const run = (bin, args, opts = {}) => execa(bin, args, { stdio: 'inherit', ...opts })
 const dryRun = (bin, args, opts = {}) => consola.info(`[dryrun] ${bin} ${args.join(' ')}`, opts)
 const runIfNotDry = isDryRun ? dryRun : run
-const getPkgRoot = pkg => path.resolve(__dirname, `../packages/${pkg}`)
+const getPkgRoot = pkg => path.resolve(__dirname, `../../../packages/${pkg}`)
 const step = msg => consola.info(msg)
 
 async function main() {

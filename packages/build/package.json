@@ -6,6 +6,9 @@
   "author": "liting <luz.liting@gmail.com>",
   "license": "MIT",
   "keywords": [],
+  "scripts": {
+    "release": "node src/release.js"
+  },
   "devDependencies": {
     "enquirer": "^2.3.6",
     "execa": "5",

@@ -39,18 +39,7 @@ importers:
       vite: 4.0.4
       vue-tsc: 1.0.24_typescript@4.9.5
 
-  docs:
-    specifiers:
-      litingvue: workspace:^0.0.0
-      vite-plugin-markdown-preview: ^1.0.3
-      vitepress: 1.0.0-alpha.44
-    dependencies:
-      litingvue: link:../packages/litingvue
-      vite-plugin-markdown-preview: 1.0.3
-    devDependencies:
-      vitepress: 1.0.0-alpha.44
-
-  internal/build:
+  packages/build:
     specifiers:
       enquirer: ^2.3.6
       execa: '5'
@@ -67,6 +56,17 @@ importers:
       vue-demi: ^0.13.11
     devDependencies:
       vue-demi: 0.13.11
+
+  packages/docs:
+    specifiers:
+      litingvue: workspace:^0.0.0
+      vite-plugin-markdown-preview: ^1.0.3
+      vitepress: 1.0.0-alpha.44
+    dependencies:
+      litingvue: link:../litingvue
+      vite-plugin-markdown-preview: 1.0.3
+    devDependencies:
+      vitepress: 1.0.0-alpha.44
 
   packages/litingvue:
     specifiers:
