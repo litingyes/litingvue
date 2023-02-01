@@ -1,7 +1,7 @@
 {
   "name": "@litingvue/docs",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": false,
   "description": "",
   "author": "liting <luz.liting@gmail.com>",
@@ -17,7 +17,7 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "litingvue": "0.0.0",
+    "litingvue": "0.0.1",
     "vite-plugin-markdown-preview": "^1.0.3"
   },
   "devDependencies": {

@@ -59,7 +59,7 @@ importers:
 
   packages/docs:
     specifiers:
-      litingvue: workspace:^0.0.0
+      litingvue: 0.0.1
       vite-plugin-markdown-preview: ^1.0.3
       vitepress: 1.0.0-alpha.44
     dependencies:
@@ -70,7 +70,7 @@ importers:
 
   packages/litingvue:
     specifiers:
-      '@litingvue/components': workspace:^0.0.0
+      '@litingvue/components': 0.0.1
     dependencies:
       '@litingvue/components': link:../components
 

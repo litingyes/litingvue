@@ -1,7 +1,7 @@
 {
   "name": "litingvue",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": false,
   "description": "An Vue3 UI Components Library",
   "author": "liting <luz.liting@gmail.com>",
@@ -31,6 +31,6 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@litingvue/components": "0.0.0"
+    "@litingvue/components": "0.0.1"
   }
 }
