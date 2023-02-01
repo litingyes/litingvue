@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
+import { presetAttributify, presetIcons, presetUno } from 'unocss'
 
 export default defineConfig({
   build: {
@@ -9,5 +10,7 @@ export default defineConfig({
       formats: ['es', 'cjs'],
     },
   },
-  plugins: [vue(), UnoCSS()],
+  plugins: [vue(), UnoCSS({
+    presets: [presetAttributify(), presetIcons(), presetUno()],
+  })],
 })
