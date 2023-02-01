@@ -2,10 +2,11 @@
   "type": "module",
   "private": false,
   "scripts": {
-    "release": "node ./internal/build/src/release.js",
+    "release": "pnpm run build && node ./internal/build/dist/release.js",
     "prepare": "git config core.hooksPath .git/hooks/ && npx simple-git-hooks",
     "commit": "git-cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "build:build": "pnpm run -C internal/build build",
     "docs:dev": "pnpm run -C docs dev",
     "docs:build": "pnpm run -C docs build",
     "docs:preview": "pnpm run -C docs preview",
