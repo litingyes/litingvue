@@ -24,6 +24,9 @@
   "scripts": {
     "build": "vite build"
   },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.8"
+  },
   "devDependencies": {
     "unocss": "^0.49.2",
     "vue-demi": "^0.13.11"
