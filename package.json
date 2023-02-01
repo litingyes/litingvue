@@ -1,6 +1,10 @@
 {
   "type": "module",
   "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "release": "pnpm run build && pnpm run -C packages/build release",
     "prepare": "git config core.hooksPath .git/hooks/ && npx simple-git-hooks",
