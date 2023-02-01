@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import MarkdownPreview from 'vite-plugin-markdown-preview'
 
 export default defineConfig({
   title: 'Liting Vue',
@@ -29,5 +30,7 @@ export default defineConfig({
       text: 'Edit this page on GitHub',
     },
   },
-
+  vite: {
+    plugins: [MarkdownPreview()],
+  },
 })

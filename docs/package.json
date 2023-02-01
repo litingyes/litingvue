@@ -1,5 +1,6 @@
 {
   "name": "@litingvue/docs",
+  "type": "module",
   "version": "0.0.0",
   "description": "",
   "author": "liting <luz.liting@gmail.com>",
@@ -9,6 +10,9 @@
     "dev": "vitepress dev --port 6001",
     "build": "vitepress build",
     "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "vite-plugin-markdown-preview": "^1.0.3"
   },
   "devDependencies": {
     "vitepress": "1.0.0-alpha.44"
