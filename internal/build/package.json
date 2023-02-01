@@ -1,6 +1,7 @@
 {
   "name": "@litintvue/build",
   "version": "0.0.0",
+  "private": false,
   "description": "",
   "author": "liting <luz.liting@gmail.com>",
   "license": "MIT",

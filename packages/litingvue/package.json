@@ -2,10 +2,18 @@
   "name": "litingvue",
   "type": "module",
   "version": "0.0.0",
-  "description": "",
+  "private": false,
+  "description": "An Vue3 UI Components Library",
   "author": "liting <luz.liting@gmail.com>",
   "license": "MIT",
-  "keywords": [],
+  "homepage": "https://litingvue.liting.ink",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liting-yes/litingvue.git"
+  },
+  "keywords": [
+    "Vue3"
+  ],
   "exports": {
     ".": {
       "require": "./dist/litingvue.cjs",
