@@ -11,11 +11,37 @@ export default defineConfig({
     root: {
       label: 'English',
       lang: 'en',
+      themeConfig: {
+        nav: [
+          { text: 'Components', link: '/components/calendar' },
+        ],
+        sidebar: [
+          {
+            text: 'Components',
+            items: [
+              { text: 'Calendar', link: '/components/calendar' },
+            ],
+          },
+        ],
+      },
     },
     zh: {
       label: '简体中文',
       lang: 'zh',
       link: '/zh/',
+      themeConfig: {
+        nav: [
+          { text: '组件', link: '/zh/components/calendar' },
+        ],
+        sidebar: [
+          {
+            text: '组件',
+            items: [
+              { text: '日历', link: '/zh/components/calendar' },
+            ],
+          },
+        ],
+      },
     },
   },
   themeConfig: {

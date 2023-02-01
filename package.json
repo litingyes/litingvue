@@ -8,7 +8,9 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "docs:dev": "pnpm run -C docs dev",
     "docs:build": "pnpm run -C docs build",
-    "docs:preview": "pnpm run -C docs preview"
+    "docs:preview": "pnpm run -C docs preview",
+    "components:build": "pnpm run -C packages/components build",
+    "build": "pnpm run components:build && pnpm run -C packages/litingvue build"
   },
   "dependencies": {
     "vue": "^3.2.45"

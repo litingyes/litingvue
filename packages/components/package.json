@@ -1,12 +1,25 @@
 {
   "name": "@litingvue/components",
+  "type": "module",
   "version": "0.0.0",
   "description": "",
   "author": "liting <luz.liting@gmail.com>",
   "license": "MIT",
   "keywords": [],
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/components.cjs",
+      "import": "./dist/components.js"
+    }
+  },
+  "main": "./dist/components.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vue-demi": "^0.13.11"
   }
 }

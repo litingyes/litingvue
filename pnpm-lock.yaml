@@ -41,9 +41,11 @@ importers:
 
   docs:
     specifiers:
+      litingvue: workspace:^0.0.0
       vite-plugin-markdown-preview: ^1.0.3
       vitepress: 1.0.0-alpha.44
     dependencies:
+      litingvue: link:../packages/litingvue
       vite-plugin-markdown-preview: 1.0.3
     devDependencies:
       vitepress: 1.0.0-alpha.44
@@ -57,6 +59,18 @@ importers:
       execa: 6.1.0
       minimist: 1.2.7
       semver: 7.3.8
+
+  packages/components:
+    specifiers:
+      vue-demi: ^0.13.11
+    devDependencies:
+      vue-demi: 0.13.11
+
+  packages/litingvue:
+    specifiers:
+      '@litingvue/components': workspace:^0.0.0
+    dependencies:
+      '@litingvue/components': link:../components
 
 packages:
 
@@ -5195,6 +5209,19 @@ packages:
 
   /vscode-textmate/8.0.0:
     resolution: {integrity: sha512-AFbieoL7a5LMqcnOF04ji+rpXadgOXnZsxQr//r83kLPr7biP7am3g9zbaZIaBGwBRWeSvoMD4mgPdX3e4NWBg==}
+    dev: true
+
+  /vue-demi/0.13.11:
+    resolution: {integrity: sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
     dev: true
 
   /vue-demi/0.13.11_vue@3.2.45:

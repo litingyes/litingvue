@@ -1,12 +1,24 @@
 {
   "name": "litingvue",
+  "type": "module",
   "version": "0.0.0",
   "description": "",
   "author": "liting <luz.liting@gmail.com>",
   "license": "MIT",
   "keywords": [],
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/litingvue.cjs",
+      "import": "./dist/litingvue.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@litingvue/components": "workspace:^0.0.0"
   }
 }
