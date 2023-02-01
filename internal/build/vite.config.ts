@@ -4,7 +4,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: ['./src/release.js'],
-      formats: ['cjs'],
+      formats: ['cjs', 'es'],
     },
   },
 })
