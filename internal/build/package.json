@@ -8,7 +8,7 @@
   "keywords": [],
   "devDependencies": {
     "enquirer": "^2.3.6",
-    "execa": "^6.1.0",
+    "execa": "5",
     "minimist": "^1.2.7",
     "semver": "^7.3.8"
   }
